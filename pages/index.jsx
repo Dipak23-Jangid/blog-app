@@ -36,7 +36,15 @@ function Home() {
               
             ))} 
             </div>
+             {!blogs && (
+                <Spinner />
+          )}
+          {blogs && !blogs.length && (
+          <div className="alert alert-info text-center bg-info1 text-white1" role="alert">
+            No blogs available at this moment.
+          </div>
             
+          )}
         </div>
       </div>
     </Layout>
