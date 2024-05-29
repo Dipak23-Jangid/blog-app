@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 
 import { NavLink } from ".";
 import { userService } from "services";
-//import logo from "../assets/images/logo-1.png";
-import logo from "../assets/images/logo-1.png";
 export { Nav };
 
 function Nav() {
@@ -20,12 +18,6 @@ function Nav() {
     <nav className="navbar navbar-expand navbar-dark bg-primary px-3">
       <div className="navbar-brand bg-default ">
         {/* <img src="https://via.placeholder.com/30" alt="Logo" className="me-2" /> */}
-        {/* <img
-          src={logo}
-          alt="Logo"
-          className="me-2"
-          style={{ height: "30px" }}
-        /> */}
         <NavLink href="/" exact className="navbar-brand">
           <svg
             id="logo-54"
